@@ -17260,10 +17260,10 @@ function m5(e) {
   },
   L5 = ({ children: e }) => {
     const [t, n] = k.useState(
-        () => localStorage.getItem("ronix-theme") || "purple"
+        () => localStorage.getItem("nullfire-theme") || "purple"
       ),
       r = (o) => {
-        n(o), localStorage.setItem("ronix-theme", o), i(na[o]);
+        n(o), localStorage.setItem("nullfire-theme", o), i(na[o]);
       },
       i = (o) => {
         const a = document.createElement("style");
@@ -17329,6 +17329,7 @@ function m5(e) {
         { name: "Script", path: "/script" },
         { name: "Get Key", path: "/get-key" },
         { name: "Premium", path: "/premium" },
+        { name: "Contributors", path: "/contribution" },
       ],
       f = [
         { name: "Purple", value: "purple", color: "#8B5CF6" },
@@ -17371,7 +17372,7 @@ function m5(e) {
                     color: c.primary,
                     textShadow: `0 0 20px ${c.primary}50`,
                   },
-                  children: "RONIX",
+                  children: "NULLFIRE",
                 }),
               }),
               u.jsx("div", {
@@ -17382,6 +17383,19 @@ function m5(e) {
                     {
                       to: m.path,
                       onClick: () => h(m.path),
+                      className:
+                        "relative text-gray-300 hover:text-white transition-all duration-300 font-medium text-sm tracking-wide group py-2 font-orbitron",
+                      children: [
+                        m.name,
+                        u.jsx("span", {
+                          className:
+                            "absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 transition-all duration-300 group-hover:w-full rounded-full",
+                          style: {
+                            background: `linear-gradient(90deg, transparent, ${c.primaryLight}, ${c.primary}, ${c.primaryLight}, transparent)`,
+                            boxShadow: `0 0 8px ${c.primary}60`,
+                          },
+                        }),
+                        u.jsx("span", {
                           className:
                             "absolute -bottom-1.5 left-1/2 transform -translate-x-1/2 w-0 h-1 transition-all duration-300 group-hover:w-3/4 rounded-full blur-sm opacity-0 group-hover:opacity-100",
                           style: {
@@ -17449,7 +17463,7 @@ function m5(e) {
                   }),
                   u.jsx("button", {
                     onClick: () =>
-                      window.open("https://discord.com/invite/ronix", "_blank"),
+                      window.open("https://discord.com/invite/nullfire", "_blank"),
                     className:
                       "flex items-center justify-center w-10 h-10 bg-black/30 border rounded-xl transition-all duration-200 hover:scale-105 group",
                     style: { borderColor: `${c.primary}30` },
@@ -17632,12 +17646,12 @@ function m5(e) {
                   textShadow: `0 0 30px ${t.primary}50, 0 0 60px ${t.primary}30`,
                 },
                 children: [
-                  "RONIX",
+                  "NULLFIRE",
                   u.jsx("div", {
                     className:
                       "absolute inset-0 font-orbitron font-black text-5xl sm:text-6xl md:text-7xl opacity-30 blur-sm -z-10",
                     style: { color: t.primary },
-                    children: "RONIX",
+                    children: "NULLFIRE",
                   }),
                 ],
               }),
@@ -17653,13 +17667,13 @@ function m5(e) {
           u.jsx("h2", {
             className:
               "text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 animate-fadeInUp leading-tight",
-            children: "A Powerful Roblox Script.",
+            children: "The Best Roblox Utility.",
           }),
           u.jsx("p", {
             className:
               "text-lg sm:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed animate-fadeInUp",
             children:
-              "NullFire is a powerful Roblox script hub with countless features and a wide array of supported games.",
+              "The ultimate solution for undetected, stable, and performant automation",
           }),
           u.jsx("div", {
             className: "flex justify-center animate-fadeInUp",
@@ -17808,11 +17822,11 @@ function m5(e) {
                   color: t.primary,
                   textShadow: `0 0 30px ${t.primary}50`,
                 },
-                children: "Why Choose Ronix Hub?",
+                children: "Why Choose Nullfire Hub?",
               }),
               u.jsx("p", {
                 className: "text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto",
-                children: "Here are some feautes, why you should choose Ronix.",
+                children: "Here are some feautes, why you should choose Nullfire.",
               }),
             ],
           }),
@@ -17917,19 +17931,19 @@ function m5(e) {
       r = n(),
       i = [
         {
-          question: "Is Ronix Hub safe to use?",
+          question: "Is Nullfire Hub safe to use?",
           answer:
-            "Yes, Ronix Hub uses advanced anti-detection technology and is regularly updated to ensure maximum safety and security for all users.",
+            "Yes, Nullfire Hub uses advanced anti-detection technology and is regularly updated to ensure maximum safety and security for all users.",
         },
         {
           question: "Which platforms are supported?",
           answer:
-            "Ronix Hub supports Windows, macOS, iOS, and Android. Download the appropriate version for your device from the download page.",
+            "Nullfire Hub supports Windows, macOS, iOS, and Android. Download the appropriate version for your device from the download page.",
         },
         {
-          question: "Do I need to pay for Ronix Hub?",
+          question: "Do I need to pay for Nullfire Hub?",
           answer:
-            "Ronix Hub offers both free and premium tiers. The free version includes core functionality, while premium unlocks advanced features and priority support.",
+            "Nullfire Hub offers both free and premium tiers. The free version includes core functionality, while premium unlocks advanced features and priority support.",
         },
         {
           question: "How do I get support?",
@@ -17961,7 +17975,7 @@ function m5(e) {
               u.jsx("p", {
                 className: "text-base sm:text-lg text-gray-300",
                 children:
-                  "Got questions? We've got answers. Find everything you need to know about Ronix.",
+                  "Got questions? We've got answers. Find everything you need to know about Nullfire.",
               }),
             ],
           }),
@@ -18057,7 +18071,7 @@ function m5(e) {
     const { getThemeColors: e } = Me(),
       t = e(),
       n = () => {
-        window.open("https://discord.com/invite/ronix", "_blank");
+        window.open("https://discord.com/invite/nullfire", "_blank");
       },
       r = { "Quick Links": ["Features", "Download"] };
     return u.jsxs("footer", {
@@ -18088,7 +18102,7 @@ function m5(e) {
                         color: t.primary,
                         textShadow: `0 0 20px ${t.primary}50`,
                       },
-                      children: "RONIX",
+                      children: "NULLFIRE",
                     }),
                     u.jsx("p", {
                       className:
@@ -18188,7 +18202,7 @@ function m5(e) {
                 u.jsx("div", {
                   className:
                     "text-gray-400 text-sm font-orbitron text-center lg:text-left",
-                  children: "© 2025 Ronix Hub. All rights reserved.",
+                  children: "© 2025 Nullfire Hub. All rights reserved.",
                 }),
                 u.jsxs("div", {
                   className:
@@ -18332,7 +18346,7 @@ function m5(e) {
           name: "Windows",
           icon: u.jsx(m5, { size: 18 }),
           version: "v.1.0.0",
-          url: "https://rekonise.com/ronix-utility-download-5qtng",
+          url: "https://rekonise.com/nullfire-utility-download-5qtng",
           manualStatus: null,
         },
         {
@@ -18340,7 +18354,7 @@ function m5(e) {
           name: "macOS",
           icon: u.jsx(Df, { size: 18 }),
           version: "v.1.0.0",
-          url: "https://rekonise.com/ronix-utility-download-5qtng",
+          url: "https://rekonise.com/nullfire-utility-download-5qtng",
           manualStatus: "Released",
         },
         {
@@ -18356,7 +18370,7 @@ function m5(e) {
           name: "Android",
           icon: u.jsx(c5, { size: 18 }),
           version: "v.1.0.0",
-          url: "https://rekonise.com/ronix-utility-download-5qtng",
+          url: "https://rekonise.com/nullfire-utility-download-5qtng",
           manualStatus: null,
         },
         {
@@ -18364,7 +18378,7 @@ function m5(e) {
           name: "Vietnam",
           icon: u.jsx("span", { className: "text-lg", children: "🇻🇳" }),
           version: "v.1.0.0",
-          url: "https://rekonise.com/ronix-utility-download-5qtng",
+          url: "https://rekonise.com/nullfire-utility-download-5qtng",
           manualStatus: null,
           flag: null,
         },
@@ -18474,7 +18488,7 @@ function m5(e) {
                       color: m.primary,
                       textShadow: `0 0 30px ${m.primary}50`,
                     },
-                    children: "Download Ronix",
+                    children: "Download Nullfire",
                   }),
                   u.jsx("p", {
                     className:
@@ -18491,7 +18505,7 @@ function m5(e) {
                   children: [
                     u.jsx("img", {
                       src: "https://files.catbox.moe/puvtcw.png",
-                      alt: "Ronix Banner",
+                      alt: "Nullfire Banner",
                       className: "w-full h-auto rounded-2xl shadow-2xl border",
                       style: {
                         borderColor: `${m.primary}30`,
@@ -18882,7 +18896,7 @@ function m5(e) {
                       color: r.primary,
                       textShadow: `0 0 20px ${r.primary}50`,
                     },
-                    children: "Ronix Script",
+                    children: "Nullfire Script",
                   }),
                   u.jsx("p", {
                     className: "text-gray-300 leading-relaxed max-w-xl mx-auto",
@@ -18919,7 +18933,7 @@ function m5(e) {
                             }),
                             u.jsx("h3", {
                               className: "text-white font-semibold",
-                              children: "Ronix Script",
+                              children: "Nullfire Script",
                             }),
                           ],
                         }),
@@ -19225,7 +19239,7 @@ function m5(e) {
                                 children: [
                                   u.jsx("h4", {
                                     className: "text-white font-semibold",
-                                    children: "Ronix Hub Access Key",
+                                    children: "Nullfire Hub Access Key",
                                   }),
                                   u.jsx("p", {
                                     className: "text-gray-400 text-sm",
@@ -19245,7 +19259,7 @@ function m5(e) {
                                 "This key is specifically for ",
                                 u.jsx("strong", {
                                   style: { color: s.primary },
-                                  children: "Ronix Hub.",
+                                  children: "Nullfire Hub.",
                                 }),
                               ],
                             }),
@@ -19254,7 +19268,7 @@ function m5(e) {
                       }),
                       u.jsx("div", {
                         className: "space-y-3",
-                        children: ["Works for Ronix Hub", "Easy & Fast"].map(
+                        children: ["Works for Nullfire Hub", "Easy & Fast"].map(
                           (o, a) =>
                             u.jsxs(
                               "div",
@@ -19365,7 +19379,7 @@ function m5(e) {
         {
           name: "Lootlab",
           logo: "https://s3-eu-west-1.amazonaws.com/tpd/logos/65786726ba1241d21ae5bdd3/0x0.png",
-          url: "https://ads.luarmor.net/get_key?for=Ronix_Script_Hub_Access-FIDnQWNJRPDQ",
+          url: "https://ads.luarmor.net/get_key?for=Nullfire_Script_Hub_Access-FIDnQWNJRPDQ",
           color: "#8B5CF6",
           description: "Fast and reliable",
           features: ["Quick Setup", "High Success Rate", "Mobile Friendly"],
@@ -19373,7 +19387,7 @@ function m5(e) {
         {
           name: "Linkvertise",
           logo: "https://www.stepstone.de/upload_de/logo/E/logoLinkvertise-Inh-Marc-Winter-255864DE-2101131647.gif",
-          url: "https://ads.luarmor.net/get_key?for=Ronix_Script_Hub_Access_2-dAMNMVvIzQxg",
+          url: "https://ads.luarmor.net/get_key?for=Nullfire_Script_Hub_Access_2-dAMNMVvIzQxg",
           color: "#F97316",
           description: "Fast and reliable",
           features: ["Easy Process", "Secure Links", "Fast Delivery"],
@@ -19414,7 +19428,7 @@ function m5(e) {
                     className:
                       "text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto",
                     children:
-                      "Choose a key provider below to get your access key for Ronix.",
+                      "Choose a key provider below to get your access key for Nullfire.",
                   }),
                 ],
               }),
@@ -19671,7 +19685,7 @@ function m5(e) {
                             u.jsx("p", {
                               className: "text-gray-400 text-sm",
                               children:
-                                "Copy the generated key and use it in for Ronix.",
+                                "Copy the generated key and use it in for Nullfire.",
                             }),
                           ],
                         }),
@@ -19687,7 +19701,7 @@ function m5(e) {
                           className: "text-gray-300 text-sm",
                           children: [
                             u.jsx("strong", { children: "Note:" }),
-                            " Keys help maintain our service for ronix.",
+                            " Keys help maintain our service for nullfire.",
                           ],
                         }),
                       ],
@@ -19706,7 +19720,7 @@ function m5(e) {
     const { getThemeColors: e } = Me(),
       t = e(),
       n = () => {
-        window.open("https://discord.gg/ronixhub", "_blank");
+        window.open("https://discord.gg/nullfirehub", "_blank");
       },
       r = [
         {
@@ -19791,13 +19805,13 @@ function m5(e) {
                       color: t.primary,
                       textShadow: `0 0 30px ${t.primary}50`,
                     },
-                    children: "Ronix Premium",
+                    children: "Nullfire Premium",
                   }),
                   u.jsx("p", {
                     className:
                       "text-lg sm:text-xl text-gray-300 mb-6 max-w-2xl mx-auto leading-relaxed",
                     children:
-                      "Unlock the full potential of Ronix with premium features and unlimited access",
+                      "Unlock the full potential of Nullfire with premium features and unlimited access",
                   }),
                   u.jsxs("div", {
                     className:
@@ -19956,7 +19970,7 @@ function m5(e) {
                                 }),
                                 u.jsx("span", {
                                   className: "text-gray-300 text-sm",
-                                  children: "Ronix Android No-Key Version",
+                                  children: "Nullfire Android No-Key Version",
                                 }),
                               ],
                             }),
@@ -20017,7 +20031,7 @@ function m5(e) {
                           u.jsx("div", {
                             className: "space-y-3 mb-6",
                             children: [
-                              "Ronix Android No-Key Version",
+                              "Nullfire Android No-Key Version",
                               "Includes 8 permanent keys",
                               "Infinite HlWD RESETS!",
                               "Early access to updates",
@@ -20243,7 +20257,7 @@ function m5(e) {
           id: "970776722461057096",
           name: "Zyn",
           role: "Script Dev",
-          description: "Script Developer of Ronix",
+          description: "Script Developer of Nullfire",
         },
         {
           id: "743187499148640286",
@@ -20281,7 +20295,7 @@ function m5(e) {
           name: "Forevermoretogether",
           role: "Community Contributor",
           description:
-            "Contributed to Ronver continuing/getting back into the community, then helping create Ronix",
+            "Contributed to Ronver continuing/getting back into the community, then helping create Nullfire",
           customAvatar: "https://files.catbox.moe/tiq2pv.webp",
           customVideo: "https://files.catbox.moe/ny9lu8.mp4",
         },
@@ -20289,7 +20303,7 @@ function m5(e) {
           id: "960225879382958134",
           name: "Console",
           role: "Window Developer",
-          description: "Window Developer for Ronix",
+          description: "Window Developer for Nullfire",
         },
         {
           id: "444915621801492490",
@@ -20512,7 +20526,7 @@ function m5(e) {
                     className:
                       "text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed px-4",
                     children:
-                      "The talented team behind Ronix Hub, working tirelessly to bring you the best experience.",
+                      "The talented team behind Nullfire Hub, working tirelessly to bring you the best experience.",
                   }),
                 ],
               }),
